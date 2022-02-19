@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bad Air by Troy Meadows</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>    
+    <h1>Bad Air! by Troy Meadows</h1>
+    <p>Data courtesy of US Environmental Protection Agency. Air Quality System Data Mart [internet database] available via https://www.epa.gov/outdoor-air-quality-data. Accessed February 7, 2022.</p>
+ 
+    <h3 class="title">Hamilton County Ohio AQI Data from 1980 to 2021</h3>
+    <div>
+        <p class="yAxisLabel">AQI</p>
+        <svg id="lineAQI"></svg>
+        <p class="xAxisLabel">Year</p>
+    </div>
+    <svg id="lineLegend"></svg>
+
+    <h3 class="title">Hamilton County Ohio Pollutant Data from 1980 to 2021</h3>
+    <div>
+        <p class="yAxisLabel">Pollutant Percentage</p>
+        <svg id="linePollutant"></svg>
+        <p class="xAxisLabel">Year</p>
+    </div>
+    <svg id="lineLegend"></svg>
+
+    <h3 class="title">Hamilton County Ohio AQI Quality Percentage Data for 2021</h3>
+    <div>
+        <p class="yAxisLabel">AQI Percentage</p>
+        <svg id="healthyBar"></svg>
+        <p class="xAxisLabel">Quality of AQI</p>
+    </div> 
+
+    <h3 class="title">Hamilton County Ohio Pollutant Percentage Data for 2021</h3>
+    <div>
+        <p class="yAxisLabel">Percentage of Pollutant</p>
+        <svg id="pollutantBar"></svg>
+        <p class="xAxisLabel">Pollutant</p>
+    </div>
+
+    <h3 class="title">Hamilton County Ohio Missed Data from 1980 to 2021</h3>
+    <div>
+        <p class="yAxisLabel"></p>
+        <svg id="missedDays"></svg>
+        <p class="xAxisLabel"></p>
+    </div>
+
+
+    <!-- D3 bundle -->
+    <script src="js/d3.v6.min.js"></script>
+
+    <!-- Our JS code - INCLUDING the new files-->
+    <script src="js/main.js"></script>
+    <script src="js/line.js"></script>
+    <script src="js/line2.js"></script>
+    <script src="js/line3.js"></script>
+    <script src="js/barChart.js"></script>
+    <script src="js/pieChart.js"></script>
+
+    <!-- <script src="js/timelineCircles.js"></script>  -->
+
+
+</body>
+</html>
